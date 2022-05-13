@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio09.EjemploConCSS">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Entry" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="SlateGray"/>
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Subtitle"/>
+                <Setter Property="TextColor" Value="MediumAquamarine" />
+                <Setter Property="Margin" Value="0,20,0,0"/>
+            </Style>
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="DarkGreen"/>
+                <Setter Property="Text" Value="Enviar formulario" />
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Margin" Value="0,20,0,0"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label Text="Nombre" Style="{StaticResource labelStyle}" ></Label>
+            <Entry Style="{StaticResource Entry}"></Entry>
+            <Label Text="Apellido"  Style="{StaticResource labelStyle}" ></Label>
+            <Entry Style="{StaticResource Entry}"></Entry>
+            <Label Text="Email" Style="{StaticResource labelStyle}" ></Label>
+            <Entry Style="{StaticResource Entry}"></Entry>
+            <Label Text="Celular" Style="{StaticResource labelStyle}" ></Label>
+            <Entry Style="{StaticResource Entry}"></Entry>
+            <Button Style="{StaticResource Button}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
